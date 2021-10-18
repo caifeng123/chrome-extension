@@ -1,0 +1,15 @@
+{
+	"name": "content script&service worker",
+	"description": "example for communication between content script and service worker",
+	"version": "1.0",
+	"manifest_version": 3,
+	"background": {
+		"service_worker": "service-worker.js"
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["content-script.js"]
+		}
+	]
+}
