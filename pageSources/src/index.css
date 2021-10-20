@@ -1,0 +1,15 @@
+body {
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+.download {
+	color: #108cee;
+}
+
+.download:hover {
+	color: #85c6f7;
+}
