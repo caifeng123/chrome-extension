@@ -15,9 +15,11 @@ window.yarn = function (str) {
 				console.log(`${str}此包不存在 是不是打错了`);
 				return;
 			}
+			console.time("耗时");
 			console.log("加载中.... please wait a moment");
-			addYarn(res.latest, () =>
-				console.log(`加载完成✅ ${str}@${res.version}`)
-			);
+			addYarn(res.latest, () => {
+				console.log(`加载完成✅ ${str}@${res.version}`);
+				console.timeEnd("耗时");
+			});
 		});
 };

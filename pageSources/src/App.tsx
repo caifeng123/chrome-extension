@@ -8,12 +8,7 @@ type widgetType = {
 
 const widgetMap: widgetType = {
 	image: (props: any) => <img width="100px" alt="" {...props} />,
-	video: (props: any) => (
-		<>
-			<video controls autoplay width="450px" {...props} />
-			{console.log(props.tempRequest)}
-		</>
-	),
+	video: (props: any) => <video controls autoplay width="450px" {...props} />
 };
 
 async function getCurrentTab() {
