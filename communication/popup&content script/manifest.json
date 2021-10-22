@@ -6,7 +6,7 @@
 	"content_scripts": [
 		{
 			"matches": ["<all_urls>"],
-			"js": ["content-script.js", "third/jquery.js"]
+			"js": ["third/jquery.js","tiaoseban.js","content script.js"]
 		}
 	],
 	"action": {
