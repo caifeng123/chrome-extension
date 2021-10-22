@@ -267,7 +267,7 @@ chrome.devtools.panels.sources.createSidebarPane(
 
 ### 二、基本组成间的通信方式
 
-![组件间关系图](https://raw.githubusercontent.com/caifeng123/pictures/master/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%20(2).png)
+![组件间关系图](https://raw.githubusercontent.com/caifeng123/pictures/master/chrome%E5%85%B3%E7%B3%BB%E5%9B%BE.png)
 
 | JS种类          | 可访问的API                                    | DOM访问情况      |    JS访问情况    | 直接跨域 |
 | --------------- | ---------------------------------------------- | ---------------- | :--------------: | :------: |
