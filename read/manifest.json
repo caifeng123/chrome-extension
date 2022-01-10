@@ -1,0 +1,21 @@
+{
+    "name": "扫盲读",
+    "description": "担心成为九年义务教育漏网之鱼？还好有扫盲读，妈妈再也不用担心我的学习",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["contextMenus"],
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content-script.js"]
+        }
+    ],
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    }
+}
