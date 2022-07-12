@@ -6,13 +6,13 @@
 
 ```js
 //e.g. 当我要下载lodash 做demo时
-yarn("lodash.js");
+yarn。("lodash.js");
 _.isEmpty({}); // true
 ```
 
-![image-20211020142425941](https://raw.githubusercontent.com/caifeng123/pictures/master/image-20211020142425941.png)
+![](https://raw.githubusercontent.com/caifeng123/pictures/master/2022-07-12-11-02-37-image.png)
 
-## 编码过程【遇到的坑】
+## 编码过程
 
 #### 原因：
 
@@ -20,19 +20,8 @@ _.isEmpty({}); // true
 
 #### 编码：
 
-- 起初设想：
+使用类易于存储状态，可以更好扩展对包的管理。可以自行扩展编写查询安装卸载操作！
 
-  ​	因为打开的是console控制台，想要通过devtools进行安装调试，但当要向window对象挂载yarn函数时，发现怎么也挂不上，之后才发现，对于devtools.js中的window实际上挂载到devtools.html的window上了，并不是我们实际界面中的window。
+![](https://raw.githubusercontent.com/caifeng123/pictures/master/2022-07-12-10-59-22-image.png)
 
-- 中期设想：
-
-  ​	由于要和当前页面交互，立马想到应当使用`content script` => 这个对应单个选项卡，既能访问当前页面又能直接console打印。因此只需将操作迁移到`content script`即可。
-
-  ​	然鹅~~还是不行，原来学艺不精`content script`仅能共用dom结点，但无法共用window对象
-
-- 最终解决：
-
-  ​	通过查询最终找到解决方法http://stackoverflow.com/questions/20499994/access-window-variable-from-content-script，利用注入脚本的形式，将挂载函数脚本直接以script形式注入到页面中即可。
-
-
-
+可使用私有变量，对外暴露更少的信息，给用户以干净简洁感。
