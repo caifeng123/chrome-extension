@@ -1,18 +1,18 @@
 {
-	"name": "devtools yarn",
-	"description": "example for yarn",
-	"version": "1.0",
-	"manifest_version": 3,
-	"content_scripts": [
-		{
-			"matches": ["<all_urls>"],
-			"js": ["content-script.js"]
-		}
-	],
-	"web_accessible_resources": [
-		{
-			"resources": ["content.js"],
-			"matches": ["<all_urls>"]
-		}
-	]
+    "name": "devtools yarn",
+    "description": "example for yarn",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content-script.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["content.js"],
+            "matches": ["<all_urls>"]
+        }
+    ]
 }
