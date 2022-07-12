@@ -1,4 +1,4 @@
-class CreateYarn {
+let CreateYarn = class {
     #registerCDN = [];
 
     constructor() {
