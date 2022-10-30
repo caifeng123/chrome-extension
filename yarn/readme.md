@@ -6,7 +6,7 @@
 
 ```js
 //e.g. 当我要下载lodash 做demo时
-yarn.add("lodash.js");
+yarn.("lodash.js");
 _.isEmpty({}); // true
 ```
 

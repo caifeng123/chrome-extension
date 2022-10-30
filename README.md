@@ -13,4 +13,5 @@ chrome-extension 研究demos
 | pageSources         | 小爬插件           | 简单爬虫插件、爬取图像、视频、文本              |
 | read                | 扫盲读插件         | 可以拖动选择文本右键朗读 - 适用难度英文和生僻字 |
 | yarn                | yarn插件       | 可以在console控制台使用yarn命令安装库后调试api  |
+| phoneNumber         | 查话费插件       | 直接点开插件即可使用  |
 

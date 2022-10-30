@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>弹出框</title>
+        <style>
+            .wrapper {
+                display: flex;
+                align-items: flex-start;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <textarea
+                id="rownumbers"
+                rows="30"
+                cols="20"
+                placeholder="请输入一列号码"
+                style="line-height: 20px"
+            ></textarea>
+            <button id="submit">获取</button>
+            <span>电话</span>
+            <textarea
+                id="phone"
+                rows="30"
+                cols="20"
+                disabled
+                style="line-height: 20px"
+            ></textarea>
+            <span>姓名</span>
+            <textarea
+                id="name"
+                rows="30"
+                cols="20"
+                disabled
+                style="line-height: 20px"
+            ></textarea>
+            <span>余额</span>
+            <textarea
+                id="balance"
+                rows="30"
+                cols="20"
+                disabled
+                style="line-height: 20px"
+            ></textarea>
+        </div>
+        <script src="./popup.js"></script>
+    </body>
+</html>

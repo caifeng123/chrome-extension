@@ -1,0 +1,13 @@
+{
+    "name": "phoneNumber",
+    "description": "电信号码查询",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "host_permissions": ["https://service.sh.189.cn/*"]
+}
